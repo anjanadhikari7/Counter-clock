@@ -1,0 +1,58 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background: linear-gradient(135deg, #ff7e5f, #3f230d);
+  font-family: "Arial", sans-serif;
+}
+h1 {
+  font-size: 3em;
+  color: aliceblue;
+}
+
+.clock {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+#output {
+  font-family: "Arial", sans-serif;
+  font-size: 3em;
+  color: #ffffff;
+  background-color: #4caf50;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  width: 200px;
+  margin: 50px auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  animation: pulse 1s infinite;
+}
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+button {
+  font-size: 1em;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #333;
+  color: #fff;
+}
+button:hover {
+  background-color: #555;
+}

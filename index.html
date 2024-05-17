@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Counter clock</title>
+    <link href="style.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <h1>Counter clock</h1>
+    <div class="clock">
+      <div id="output">0</div>
+      <div class="button-container">
+        <button onclick="startTimer()"><i class="fa-solid fa-play"></i></button>
+        <button onclick="pauseTimer()">
+          <i class="fa-solid fa-pause"></i>
+        </button>
+        <button onclick="stopTimer()"><i class="fa-solid fa-stop"></i></button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
